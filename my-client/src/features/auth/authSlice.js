@@ -3,7 +3,7 @@ import axios from 'axios';
 
 axios.defaults.withCredentials = true; // for cookies
 
-const BASE_URL = 'https://minirideapp-production.up.railway.app/';
+const BASE_URL = 'https://minirideapp-production.up.railway.app';
 
 export const signup = createAsyncThunk('auth/signup', async (data) => {
   const res = await axios.post(`${BASE_URL}/auth/signup`, data);
