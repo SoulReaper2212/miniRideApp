@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-const BASE_URL = 'http://localhost:5000';
+const BASE_URL = 'https://minirideapp-production.up.railway.app/';
 
 export const createRide = createAsyncThunk('ride/create', async ({ pickup, dest, token }) => {
   const res = await axios.post(
